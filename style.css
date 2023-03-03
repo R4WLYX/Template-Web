@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #272c2c;
+}
+
+/* Navbar */
+
+li, a, button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
+
+.logo {
+  cursor: pointer;
+  order: 1;
+  margin-right: auto;
+  margin-left: -32px;
+  padding: 7px 20px;
+  box-shadow: 0 0 8px #376364;
+  background-image: linear-gradient(to top right, #25393a, #376364);
+  border-radius: 40px;
+}
+
+.logo:hover {
+  background-image: linear-gradient(to top right, #293c3d, #305757);
+}
+
+.logo:active {
+  box-shadow: inset 0 0 8px #25393a;
+  background-image: linear-gradient(to top right, #212e30, #2b4d4d);
+}
+
+.nav {
+  order: 2;
+}
+
+.nav__links {
+  list-style: none;
+  background-color: #24252a;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+  background-color: #24252a;
+}
+
+.links__anchors {
+  background-color: #24252a;
+}
+
+.links__anchors:hover {
+  color: #bcdee5;
+}
+
+.login-page {
+  order: 3;
+  background-color: #24252a;
+}
+
+button {
+  margin-left: 20px;
+  margin-right: -32px;
+  padding: 9px 25px;
+  box-shadow: 0 0 8px #0087a9;
+  background-image: linear-gradient(to top right, #165364, #0087a9);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  color: #bcdee5;
+  background-image: linear-gradient(to top right, #134553, #017491);
+}
+
+button:active {
+  box-shadow: inset 0 0 8px #165364;
+  background-image: linear-gradient(to top right, #103a46, #015f77);
+}
+
+/* Change Navbar Based on Window Width */
+
+@media screen and (max-width: 728px) {
+  .logo {
+    margin-left: -16px;
+  }
+  .login-page {
+    margin-right: -16px;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .logo {
+    margin-left: -32px;
+  }
+  .login-page {
+    margin-right: -32px;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .logo {
+    margin-left: 0;
+  }
+  .login-page {
+    margin-right: 0;
+  }
+  .nav {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #253435;
+  margin: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f4142;
+  border: 2px solid #253435;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3e5052;
+}
+
+/* Articles */
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  margin: 24px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.text h1.title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+.text p {
+  text-indent: 32px;
+  margin-left: 36px;
+}
